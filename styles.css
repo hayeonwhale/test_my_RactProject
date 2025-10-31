@@ -1,0 +1,89 @@
+/* src/styles.css */
+
+/* --- 1. 전역 레이아웃 스타일 (App Component) --- */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  width: 100%;
+  
+  /* container 속성: 중앙 정렬 및 최대 너비 설정 */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* 패딩(padding) 설정 */
+  padding: 8rem 1rem 3rem; /* top, left/right, bottom */
+}
+
+
+/* --- 2. 포트폴리오 콘텐츠 스타일 (PortfolioContent Component) --- */
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 3rem; /* 48px */
+}
+
+.portfolio-title {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  font-weight: 800; /* font-extrabold */
+  letter-spacing: -0.025em; /* tracking-tight */
+  
+  /* 그라데이션 텍스트 효과 */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, rgb(147 51 234), rgb(79 70 229));
+}
+
+.portfolio-subtitle {
+  margin-top: 1.5rem; /* 24px */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  color: rgb(100 116 139); /* text-slate-500 */
+  max-width: 42rem; /* 672px */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* 기본 1열 */
+  gap: 2rem; /* 32px */
+}
+
+
+/* --- 3. 반응형 디자인 (Media Queries) --- */
+
+/* 태블릿 사이즈 이상 (768px) */
+@media (min-width: 768px) {
+  .main-content {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  
+  .portfolio-header {
+    margin-bottom: 4rem; /* 64px */
+  }
+
+  .portfolio-title {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2열 */
+  }
+}
+
+/* 데스크탑 사이즈 이상 (1024px) */
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3열 */
+  }
+}
