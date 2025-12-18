@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/test_my_RactProject/static/js/main.6100d8ae.js",
+    "main.js": "/test_my_RactProject/static/js/main.cd35dcee.js",
     "index.html": "/test_my_RactProject/index.html",
-    "main.6100d8ae.js.map": "/test_my_RactProject/static/js/main.6100d8ae.js.map"
+    "main.cd35dcee.js.map": "/test_my_RactProject/static/js/main.cd35dcee.js.map"
   },
   "entrypoints": [
-    "static/js/main.6100d8ae.js"
+    "static/js/main.cd35dcee.js"
   ]
 }
